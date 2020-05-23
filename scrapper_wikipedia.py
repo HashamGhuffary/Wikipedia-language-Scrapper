@@ -53,7 +53,7 @@ if __name__ == '__main__':
         thewriter.writerow(['Languages', 'Local names', 'codes'])
         thewriter.writerow([''])
 
-    with open('info.csv', 'a') as f:
+    with open('info.csv', 'a', encoding="utf-8") as f:
         thewriter = csv.writer(f)
 
         for i, x, _ in zip(iso_names, local_names, lang_nicks):
